@@ -81,7 +81,7 @@ legend("topright", legend = paste0("Lineage ", 1:3),
        col = curve_cols, lwd = 2.5, bty = "n")
 dev.off()
 
-# 11. 保存R环境及软件版本
+# 11. 保存
 save.image(file.path(outdir, "Mac_Slingshot_Analysis.RData"))
 writeLines(capture.output(sessionInfo()),
            file.path(outdir, "Slingshot_sessionInfo.txt"))
